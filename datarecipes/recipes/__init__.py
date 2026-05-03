@@ -1,3 +1,6 @@
+# Ignore 'unused' imports
+# ruff: noqa: F401
+
 from datarecipes.recipes.general import FromFunction
 from datarecipes.recipes.general import Object
 
