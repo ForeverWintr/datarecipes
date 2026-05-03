@@ -29,7 +29,7 @@ dev = [
 
 [project]
 name = "datarecipes"
-version = "0.1.0"
+version = "0.2.0"
 description = "A package for declarative data composition"
 authors = [{ name = 'Tom Rutherford', email = 'foreverwintr@gmail.com' }]
 license = "MIT"
