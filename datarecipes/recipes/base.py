@@ -9,8 +9,8 @@ from abc import abstractmethod
 
 from frozendict import frozendict
 
-from blueprints import util
-from blueprints.constants import MissingDependencyBehavior
+from datarecipes import util
+from datarecipes.constants import MissingDependencyBehavior
 
 
 class Parameters(tp.NamedTuple):

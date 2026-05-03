@@ -1,13 +1,13 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-Core package code lives in `blueprints/`. Key modules:
-- `blueprints/recipes/`: recipe abstractions and built-in recipe types (`base.py`, `general.py`, `static_frame.py`).
-- `blueprints/factory.py`: execution engines (`Factory`, `FactoryMP`) for resolving recipe DAGs.
-- `blueprints/blueprint.py`: dependency graph/build-state model.
-- `blueprints/serialization.py`: JSON-friendly serialization/deserialization.
-- `blueprints/renderers/`: experimental Dash-based graph rendering.
-- `blueprints/tests/`: pytest suite (`test_*.py`) and fixtures (`conftest.py`).
+Core package code lives in `datarecipes/`. Key modules:
+- `datarecipes/recipes/`: recipe abstractions and built-in recipe types (`base.py`, `general.py`, `static_frame.py`).
+- `datarecipes/factory.py`: execution engines (`Factory`, `FactoryMP`) for resolving recipe DAGs.
+- `datarecipes/blueprint.py`: dependency graph/build-state model.
+- `datarecipes/serialization.py`: JSON-friendly serialization/deserialization.
+- `datarecipes/renderers/`: experimental Dash-based graph rendering.
+- `datarecipes/tests/`: pytest suite (`test_*.py`) and fixtures (`conftest.py`).
 
 Project config is in `pyproject.toml`; lint hooks are in `.pre-commit-config.yaml`.
 
@@ -17,10 +17,10 @@ Use uv and Python 3.11+.
 ```bash
 uv sync --group dev                               # Create/update .venv with dev deps
 uv run pytest                                     # Run test suite
-uv run pytest --cov=blueprints --cov-report=term-missing
+uv run pytest --cov=datarecipes --cov-report=term-missing
 uv run ruff check .                               # Lint (includes import-order checks)
 uv run ruff format .                              # Format code
-uv run mypy blueprints                            # Static type checks
+uv run mypy datarecipes                            # Static type checks
 uv run pre-commit install                         # Enable local git hooks
 ```
 
@@ -30,7 +30,7 @@ uv run pre-commit install                         # Enable local git hooks
 
 ## Testing Guidelines
 - Framework: `pytest`.
-- Place tests in `blueprints/tests/` and name files `test_*.py`.
+- Place tests in `datarecipes/tests/` and name files `test_*.py`.
 - Name tests by behavior (for example, `test_missing_bind`).
 - Add/adjust tests for dependency ordering, missing-data behavior, and serialization when changing recipe/factory logic.
 

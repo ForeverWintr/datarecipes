@@ -10,13 +10,13 @@ import frame_fixtures as ff
 import pytest
 import static_frame as sf
 
-from blueprints import util
-from blueprints.factory import Factory
-from blueprints.recipes.general import FromFunction
-from blueprints.recipes.general import Object
-from blueprints.recipes.static_frame import FrameFromDelimited
-from blueprints.recipes.static_frame import FrameFromRecipes
-from blueprints.recipes.static_frame import SeriesFromDelimited
+from datarecipes import util
+from datarecipes.factory import Factory
+from datarecipes.recipes.general import FromFunction
+from datarecipes.recipes.general import Object
+from datarecipes.recipes.static_frame import FrameFromDelimited
+from datarecipes.recipes.static_frame import FrameFromRecipes
+from datarecipes.recipes.static_frame import SeriesFromDelimited
 
 
 @pytest.fixture(scope="module")
@@ -276,5 +276,5 @@ def test_frame_from_recipes_missing_index(sample_frame):
     result = f.process_recipe(recipe)
 
     # I've decided that it's ok for process_recipe to return missing, at least for now.
-    # See https://github.com/ForeverWintr/blueprints/issues/3
+    # See https://github.com/ForeverWintr/datarecipes/issues/3
     assert isinstance(result, util.MissingPlaceholder)

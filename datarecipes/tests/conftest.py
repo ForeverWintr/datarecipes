@@ -2,10 +2,10 @@ from __future__ import annotations
 
 import typing as tp
 
-from blueprints import constants
-from blueprints.recipes.base import Dependencies
-from blueprints.recipes.base import DependencyRequest
-from blueprints.recipes.base import Recipe
+from datarecipes import constants
+from datarecipes.recipes.base import Dependencies
+from datarecipes.recipes.base import DependencyRequest
+from datarecipes.recipes.base import Recipe
 
 #  Pretend these are tables
 TABLES = {

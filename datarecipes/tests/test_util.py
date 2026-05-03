@@ -5,13 +5,13 @@ from functools import partial
 import pytest
 from frozendict import frozendict
 
-from blueprints import util
-from blueprints.constants import CALLABLE_KEY_IDENTIFIER
-from blueprints.constants import BuildState
-from blueprints.recipes.base import Dependencies
-from blueprints.recipes.base import Parameters
-from blueprints.recipes.base import Recipe
-from blueprints.tests.conftest import Node
+from datarecipes import util
+from datarecipes.constants import CALLABLE_KEY_IDENTIFIER
+from datarecipes.constants import BuildState
+from datarecipes.recipes.base import Dependencies
+from datarecipes.recipes.base import Parameters
+from datarecipes.recipes.base import Recipe
+from datarecipes.tests.conftest import Node
 
 
 def test_process_recipe_success() -> None:
@@ -96,7 +96,7 @@ def test_get_callable_key() -> None:
     k = util.get_callable_key(test_recipes_and_dependencies)
     assert k == (
         CALLABLE_KEY_IDENTIFIER,
-        "blueprints.tests.test_util",
+        "datarecipes.tests.test_util",
         "test_recipes_and_dependencies",
     )
 
@@ -105,7 +105,7 @@ def test_callable_from_key() -> None:
     c = util.callable_from_key(
         (
             CALLABLE_KEY_IDENTIFIER,
-            "blueprints.tests.test_util",
+            "datarecipes.tests.test_util",
             "test_recipes_and_dependencies",
         )
     )
@@ -116,7 +116,7 @@ def test_callable_from_key_module_not_loaded() -> None:
     c = util.callable_from_key(
         (
             CALLABLE_KEY_IDENTIFIER,
-            "blueprints.tests.unloaded_module_test",
+            "datarecipes.tests.unloaded_module_test",
             "func",
         )
     )
@@ -130,7 +130,7 @@ class QualnameTest:
 
 def test_callable_from_key_qualname() -> None:
     c = util.callable_from_key(
-        (CALLABLE_KEY_IDENTIFIER, "blueprints.tests.test_util", "QualnameTest.func")
+        (CALLABLE_KEY_IDENTIFIER, "datarecipes.tests.test_util", "QualnameTest.func")
     )
     assert c is QualnameTest.func
 

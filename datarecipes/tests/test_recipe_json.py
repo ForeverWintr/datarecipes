@@ -7,13 +7,13 @@ import networkx as nx
 import pytest
 from frozendict import frozendict
 
-from blueprints import serialization
-from blueprints.blueprint import Blueprint
-from blueprints.factory import util
-from blueprints.recipes import base
-from blueprints.recipes import general
-from blueprints.recipes import static_frame
-from blueprints.tests.conftest import Node
+from datarecipes import serialization
+from datarecipes.blueprint import Blueprint
+from datarecipes.factory import util
+from datarecipes.recipes import base
+from datarecipes.recipes import general
+from datarecipes.recipes import static_frame
+from datarecipes.tests.conftest import Node
 
 
 class Case(tp.NamedTuple):
