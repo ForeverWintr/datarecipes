@@ -4,7 +4,7 @@
 
 __author__ = """Tom Rutherford"""
 __email__ = "foreverwintr@gmail.com"
-__version__ = "0.1.0"
+__version__ = "0.3.0"
 
 
 from datarecipes.blueprint import Blueprint
