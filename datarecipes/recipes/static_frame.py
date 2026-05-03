@@ -8,11 +8,11 @@ import numpy as np
 import static_frame as sf
 from frozendict import frozendict
 
-from blueprints import util
-from blueprints.constants import MissingDependencyBehavior
-from blueprints.recipes.base import Dependencies
-from blueprints.recipes.base import DependencyRequest
-from blueprints.recipes.base import Recipe
+from datarecipes import util
+from datarecipes.constants import MissingDependencyBehavior
+from datarecipes.recipes.base import Dependencies
+from datarecipes.recipes.base import DependencyRequest
+from datarecipes.recipes.base import Recipe
 
 
 class _FromDelimited(Recipe):

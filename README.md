@@ -1,5 +1,5 @@
-![GithubActions Badge](https://github.com/ForeverWintr/blueprints/actions/workflows/tests.yml/badge.svg)
-<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a> [![codecov](https://codecov.io/gh/ForeverWintr/blueprints/branch/main/graph/badge.svg?token=COLZBZZ2SR)](https://codecov.io/gh/ForeverWintr/blueprints)
+![GithubActions Badge](https://github.com/ForeverWintr/datarecipes/actions/workflows/tests.yml/badge.svg)
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a> [![codecov](https://codecov.io/gh/ForeverWintr/datarecipes/branch/main/graph/badge.svg?token=COLZBZZ2SR)](https://codecov.io/gh/ForeverWintr/datarecipes)
 
 Blueprints is FrameFactory 2.
 
@@ -22,9 +22,9 @@ This creates/updates `.venv` and installs runtime + development dependencies.
 ### Common Commands
 ```bash
 uv run pytest
-uv run pytest --cov=blueprints --cov-report=xml
+uv run pytest --cov=datarecipes --cov-report=xml
 uv run ruff check .
 uv run ruff format .
-uv run mypy blueprints
+uv run mypy datarecipes
 uv run pre-commit install
 ```

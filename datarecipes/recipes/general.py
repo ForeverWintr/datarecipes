@@ -2,8 +2,8 @@ import typing as tp
 
 from frozendict import frozendict
 
-from blueprints.recipes.base import Dependencies
-from blueprints.recipes.base import Recipe
+from datarecipes.recipes.base import Dependencies
+from datarecipes.recipes.base import Recipe
 
 
 class Object(Recipe):

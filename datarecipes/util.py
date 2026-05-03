@@ -6,14 +6,14 @@ import typing as tp
 
 import networkx as nx
 
-from blueprints import constants
-from blueprints import exceptions
-from blueprints.constants import BuildState
+from datarecipes import constants
+from datarecipes import exceptions
+from datarecipes.constants import BuildState
 
 if tp.TYPE_CHECKING:
-    from blueprints.recipes.base import Dependencies
-    from blueprints.recipes.base import DependencyRequest
-    from blueprints.recipes.base import Recipe
+    from datarecipes.recipes.base import Dependencies
+    from datarecipes.recipes.base import DependencyRequest
+    from datarecipes.recipes.base import Recipe
 
 
 class MissingPlaceholder(tp.NamedTuple):

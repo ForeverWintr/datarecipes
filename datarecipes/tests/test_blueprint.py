@@ -5,17 +5,17 @@ import typing as tp
 import pytest
 from frozendict import frozendict
 
-from blueprints import exceptions
-from blueprints import util
-from blueprints.blueprint import Blueprint
-from blueprints.blueprint import get_blueprint_layout
-from blueprints.constants import BuildState
-from blueprints.recipes.base import Dependencies
-from blueprints.recipes.base import DependencyRequest
-from blueprints.recipes.base import Recipe
-from blueprints.tests.conftest import Node
-from blueprints.tests.conftest import TestColumn
-from blueprints.tests.conftest import TestData
+from datarecipes import exceptions
+from datarecipes import util
+from datarecipes.blueprint import Blueprint
+from datarecipes.blueprint import get_blueprint_layout
+from datarecipes.constants import BuildState
+from datarecipes.recipes.base import Dependencies
+from datarecipes.recipes.base import DependencyRequest
+from datarecipes.recipes.base import Recipe
+from datarecipes.tests.conftest import Node
+from datarecipes.tests.conftest import TestColumn
+from datarecipes.tests.conftest import TestData
 
 
 @pytest.fixture

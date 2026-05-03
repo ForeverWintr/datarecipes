@@ -6,11 +6,11 @@ from concurrent.futures import Future
 from concurrent.futures import ProcessPoolExecutor
 from concurrent.futures import wait
 
-from blueprints import exceptions
-from blueprints import util
-from blueprints.blueprint import Blueprint
-from blueprints.recipes.base import Parameters
-from blueprints.recipes.base import Recipe
+from datarecipes import exceptions
+from datarecipes import util
+from datarecipes.blueprint import Blueprint
+from datarecipes.recipes.base import Parameters
+from datarecipes.recipes.base import Recipe
 
 
 class Factory:
@@ -32,7 +32,7 @@ class Factory:
         if not buildable and not blueprint.is_built():
             # This should not happen. If it does, it indicates an internal error in
             # the factory.
-            raise exceptions.blueprintsError(
+            raise exceptions.datarecipesError(
                 "Blueprint is not built but returned no buildable recipes."
             )
         if building:

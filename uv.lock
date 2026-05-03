@@ -57,49 +57,6 @@ wheels = [
 ]
 
 [[package]]
-name = "blueprints"
-version = "0.1.0"
-source = { editable = "." }
-dependencies = [
-    { name = "frozendict" },
-    { name = "networkx" },
-    { name = "types-networkx" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "dash" },
-    { name = "flask" },
-    { name = "flask-caching" },
-    { name = "frame-fixtures" },
-    { name = "mypy" },
-    { name = "pytest" },
-    { name = "pytest-cov" },
-    { name = "ruff" },
-    { name = "static-frame" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "frozendict", specifier = ">=2.4.6,<3.0.0" },
-    { name = "networkx", specifier = ">=3.5,<4.0" },
-    { name = "types-networkx", specifier = ">=3.6.1.20260408,<4.0.0.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "dash", specifier = ">=3.2.0,<5.0.0" },
-    { name = "flask", specifier = ">=3.1.2,<4.0.0" },
-    { name = "flask-caching", specifier = ">=2.4.0,<3.0.0" },
-    { name = "frame-fixtures", specifier = ">=1.1.0,<2.0.0" },
-    { name = "mypy", specifier = ">=1.20.2,<2.0.0" },
-    { name = "pytest", specifier = ">=9.0.3,<10.0.0" },
-    { name = "pytest-cov", specifier = ">=7.0.0,<8.0.0" },
-    { name = "ruff", specifier = ">=0.15.12,<1.0.0" },
-    { name = "static-frame", specifier = ">=4.0.0,<5.0.0" },
-]
-
-[[package]]
 name = "cachelib"
 version = "0.13.0"
 source = { registry = "https://pypi.org/simple" }
@@ -333,6 +290,49 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/44/da/a13ae3a6528bd51a6901461dbff4549c6009de203d6249a89b9a09ac5cfb/dash-4.1.0.tar.gz", hash = "sha256:17a92a87b0c1eacc025079a705e44e72cd4c5794629c0a2909942b611faeb595", size = 6927689, upload-time = "2026-03-23T20:39:47.578Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/2a/00/10b1f8b3885fc4add1853e9603af15c593fa0be20d37c158c4d811e868dc/dash-4.1.0-py3-none-any.whl", hash = "sha256:1af9f302bc14061061012cdb129b7e370d3604b12a7f730b252ad8e4966f01f7", size = 7232489, upload-time = "2026-03-23T20:39:40.658Z" },
+]
+
+[[package]]
+name = "datarecipes"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "frozendict" },
+    { name = "networkx" },
+    { name = "types-networkx" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "dash" },
+    { name = "flask" },
+    { name = "flask-caching" },
+    { name = "frame-fixtures" },
+    { name = "mypy" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "ruff" },
+    { name = "static-frame" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "frozendict", specifier = ">=2.4.6,<3.0.0" },
+    { name = "networkx", specifier = ">=3.5,<4.0" },
+    { name = "types-networkx", specifier = ">=3.6.1.20260408,<4.0.0.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "dash", specifier = ">=3.2.0,<5.0.0" },
+    { name = "flask", specifier = ">=3.1.2,<4.0.0" },
+    { name = "flask-caching", specifier = ">=2.4.0,<3.0.0" },
+    { name = "frame-fixtures", specifier = ">=1.1.0,<2.0.0" },
+    { name = "mypy", specifier = ">=1.20.2,<2.0.0" },
+    { name = "pytest", specifier = ">=9.0.3,<10.0.0" },
+    { name = "pytest-cov", specifier = ">=7.0.0,<8.0.0" },
+    { name = "ruff", specifier = ">=0.15.12,<1.0.0" },
+    { name = "static-frame", specifier = ">=4.0.0,<5.0.0" },
 ]
 
 [[package]]

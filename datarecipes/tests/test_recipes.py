@@ -2,15 +2,15 @@ import dataclasses
 
 import pytest
 
-from blueprints.factory import Factory
-from blueprints.factory import util
-from blueprints.recipes import base
-from blueprints.recipes import general
-from blueprints.recipes import static_frame
-from blueprints.tests.conftest import TABLES
-from blueprints.tests.conftest import Node
-from blueprints.tests.conftest import TestColumn
-from blueprints.tests.conftest import TestData
+from datarecipes.factory import Factory
+from datarecipes.factory import util
+from datarecipes.recipes import base
+from datarecipes.recipes import general
+from datarecipes.recipes import static_frame
+from datarecipes.tests.conftest import TABLES
+from datarecipes.tests.conftest import Node
+from datarecipes.tests.conftest import TestColumn
+from datarecipes.tests.conftest import TestData
 
 
 def test_immutable():
@@ -100,7 +100,7 @@ def test_recipe_type_registry():
     reg = base._RecipeTypeRegistry()
     key = reg.key(FakeRecipe)
     assert key == (
-        "blueprints.tests.test_recipes",
+        "datarecipes.tests.test_recipes",
         "test_recipe_type_registry.<locals>.FakeRecipe",
     )
 

@@ -2,18 +2,18 @@ from __future__ import annotations
 
 import pytest
 
-from blueprints import exceptions
-from blueprints import util
-from blueprints.blueprint import Blueprint
-from blueprints.factory import Factory
-from blueprints.factory import FactoryMP
-from blueprints.recipes.general import Object
-from blueprints.tests.conftest import TABLES
-from blueprints.tests.conftest import BindMissing
-from blueprints.tests.conftest import MultiColumn
-from blueprints.tests.conftest import Raiser
-from blueprints.tests.conftest import TestColumn
-from blueprints.tests.conftest import TestData
+from datarecipes import exceptions
+from datarecipes import util
+from datarecipes.blueprint import Blueprint
+from datarecipes.factory import Factory
+from datarecipes.factory import FactoryMP
+from datarecipes.recipes.general import Object
+from datarecipes.tests.conftest import TABLES
+from datarecipes.tests.conftest import BindMissing
+from datarecipes.tests.conftest import MultiColumn
+from datarecipes.tests.conftest import Raiser
+from datarecipes.tests.conftest import TestColumn
+from datarecipes.tests.conftest import TestData
 
 FACTORY_TYPES = (Factory, FactoryMP)
 
@@ -59,7 +59,7 @@ def test_recipes_to_build_error(factory_constructor):
     b._buildable = frozenset()
 
     f = factory_constructor()
-    with pytest.raises(exceptions.blueprintsError):
+    with pytest.raises(exceptions.datarecipesError):
         f.recipes_to_build(b)
 
 
